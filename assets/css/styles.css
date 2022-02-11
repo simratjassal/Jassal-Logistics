@@ -2217,7 +2217,7 @@ responsive
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .header-area .main-nav .logo h4 {
     font-size: 30px;
   }
@@ -2288,18 +2288,11 @@ responsive
   .post-item .thumb img {
     max-width: 140px;
   }
-  .post-item .right-content p {
-    display: none;
-  }
+	
   .about-us .about-item {
     margin-top: 15px;
   }
   form#contact {
     padding: 30px;
   }
-/* 
-  .post-item{
-    display: flex;
-    flex-direction: column;
-  } */
 }
