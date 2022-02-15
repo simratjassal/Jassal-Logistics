@@ -588,7 +588,7 @@ https://templatemo.com/tm-568-digimedia
                         </div>
                       </div>
                     </div>
-                    <form action="" id="contact-form" class="contact__form">
+                    <form method="post" data-netlify="true" name="Contact Me" id="contact-form" class="contact__form">
                     <div class="col-lg-6">
                       <fieldset>
                         <input type="name" name="user_name" id="name" placeholder="Name" autocomplete="on" required>
@@ -634,42 +634,6 @@ https://templatemo.com/tm-568-digimedia
 
 
   <!-- Scripts -->
-
-
-    <!--===== EMAIL.JS =====-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_CEiRkdkuUK0k9G3k7IA8p");
-      })();
-    </script>
-
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            // this.contact_number.value = Math.random() * 100000 | 0;
-            // these IDs from the previous steps
-            emailjs.sendForm("bds_roadlines", "template_q75kb0r", this).then(
-              function () {
-                console.log("SUCCESS!");
-                window.location.href = "./success.html";
-              },
-              function (error) {
-                console.log("FAILED...", error);
-                window.location.href = "./failure.html";
-              }
-            );
-          });
-      };
-    </script>
-
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
